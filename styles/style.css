@@ -253,6 +253,6 @@
 
 .footer__social-list-item {
     width: 48px;
-    height: 48px;
+    height: auto;
     list-style-type: none;
 }
