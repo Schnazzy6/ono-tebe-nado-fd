@@ -1,1 +1,258 @@
-/* место для вашего кода */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 92px 50px 96px;
+    font-size: 18px;
+}
+
+.header-navigation-list {
+    display: flex;
+    gap: 33px;
+    text-transform: lowercase;
+    list-style-type: circle;
+}
+
+.header-navigation-list-item:first-child {
+    list-style-type: none;
+}
+
+.link-active {
+    text-decoration: none;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
+    width: 148px;
+    height: 105px;
+}
+
+.address {
+    max-width: 240px;
+    font-style: normal;
+    line-height: 1.32;
+}
+
+.header__address {
+    justify-self: end;
+}
+
+.cover {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 757px;
+    color: white;
+    background-image: url("../images/cover.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 165px 50px 106px;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 115px;
+    text-transform: uppercase;
+}
+
+.aligned-text {
+    display: block;
+}
+
+.letter-spacing-extended {
+    margin-right: -30px;
+    letter-spacing: 30px;
+}
+
+.aligned-text_center {
+    align-self: center;
+}
+
+.aligned-text_right {
+    align-self: end;
+}
+
+.cover__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px 50px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.cover__description-text {
+    word-spacing: 19px;
+}
+
+.bet-button {
+    border: 1px solid white;
+    padding: 12px 32px 11px 31px;
+}
+
+.lots {
+    margin: 180px 24px 120px;
+}
+
+.lots__heading {
+    margin-left: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.lots__card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 27px 0 30px;
+    list-style-type: none;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 334px;
+    min-height: 596px;
+    padding: 48px 40px;
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+.card__title {
+    font-size: 22px;
+    line-height: 26px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.card__text {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.card_type_film {
+    background-image: url("../images/card-lot-01.jpg");
+}
+
+.card_type_book {
+    background-image: url("../images/card-lot-02.jpg");
+}
+
+.card_type_picture {
+    background-image: url("../images/card-lot-03.jpg");
+}
+
+.lots__look-more-link {
+    margin-left: 40px;
+    font-size: 20px;
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 359px 2fr;
+    margin: 0 24px 180px;
+}
+
+.about__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    margin: 35px 0 0 47px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.about__logo-image {
+    width: 148px;
+    height: 114px;
+}
+
+.about__column {
+    margin-top: 133px;
+}
+
+.about__title {
+    margin-bottom: 102px;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.about__text {
+    font-size: 20px;
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+.about__text:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 84px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.footer__address a {
+    display: block;
+    line-height: 1.35;
+}
+
+.footer__menu-list {
+    list-style-type: none;
+}
+
+.footer__menu-list-item {
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.footer__menu-link {
+    text-decoration: underline;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 48px;
+}
+
+.footer__social-list-item {
+    width: 48px;
+    height: 48px;
+    list-style-type: none;
+}
